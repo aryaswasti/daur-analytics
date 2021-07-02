@@ -25,7 +25,9 @@ class App extends React.Component {
                 <Main />
                 <OurExpertise />
                 <ContactUs />
+                <div className='main-pic'>
                 <img src={analyst} alt='analyst' />
+                </div>
                 <Map location={location} zoomLevel={17} />
                 <Footer />
             </div>
