@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.header{
+  display: grid;
+  width: 100%;
+  height: 200px;
+  grid-template-areas: "logo company-name"
+"list login";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 150px auto;
+  position: fixed;
+  background: white;
+  z-index: 100;
+}
+
+.logo{
+  grid-area: "logo";
+  padding: 20px;
+  display: flex;
+  margin-left: 35px;
+  margin-right: 0;
+  margin-top: 25px;
+  cursor: pointer;
+  height: 60px;
+  width: 92px;
+}
+
+.company-name{
+  grid-area: "company-name";
+  line-height: 70%;
+  cursor: pointer;
+}
+
+.company-name > h2 {
+  font-size: 22px;
+  font-family: "Playfair Display";
+  margin-left: 20px;
+}
+
+.options {
+  grid-area: list;
+  margin-left: 60px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.options span {
+  padding: 10px;
+}
+
+.log-in{
+  grid-area: "login";
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 60px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.profile-icon {
+  margin-right: 10px;
+}

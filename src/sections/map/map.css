@@ -1,0 +1,23 @@
+.map {
+    width: 100%;
+    height: 80vh;
+}
+
+.pin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 1080px;
+}
+
+.pin-text {
+    font-size: 1.3em;
+    color: white;
+    width: 100%;
+}
+
+.pin img{
+    height: 65px;
+    width: 60px;
+}

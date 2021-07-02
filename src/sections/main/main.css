@@ -1,0 +1,112 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    /* width: 90%; */
+    height: 100%;
+}
+
+.content-text {
+    /* display: flex; */
+    /* flex-direction: column;
+    justify-content: center; */
+    padding: 3rem;
+    background-color: #f6f6f6;
+    height: 550px;
+    /* margin: 20px; */
+    margin-top: 200px;
+    margin-left: 12rem;
+    width: 64%;
+    /* object-fit: contain; */
+    overflow-y: auto;
+}
+
+.content-text h2{
+    font-family: "Playfair Display";
+    font-size: 40px;
+    /* padding: 5px; */
+    font-weight: 8000;
+    margin-top: 0; 
+}
+
+.content-text p {
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.content-text li {
+    /* padding: 10px; */
+    font-size: 15px;
+    line-height: 1.6;
+    width: 90%;
+    /* margin-left: 1rem; */
+}
+
+
+.content-list-items{
+    margin-left: 1rem;
+}
+
+.content-text button{
+    padding: 15px;
+    width: 100px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 15px;
+    background: black;
+    border: black;
+    color: white;
+    margin: 20px;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    transition: all 0.2s ease-in-out;
+}
+
+.content-text button:hover{
+    background: #282c34;
+}
+
+.content-image {
+    width: 100%;
+    display: flex;
+    /* object-fit: contain; */
+    /* margin-left: -4.5rem; */
+    margin-top: 75px;
+    margin-right: 12rem;
+    z-index: -10;
+}
+
+@media only screen and (max-width: 1100px) {
+    .content-image{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        /* width: 50%; */
+        justify-content: center;
+    }
+
+    .content-text{
+        margin-left: 0;
+        margin-right: 0;
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+
+    .content-image{
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-text{
+        margin-left: 6rem;
+        margin-right: 6rem;
+        height: 50%;
+    }
+}

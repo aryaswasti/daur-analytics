@@ -1,0 +1,38 @@
+.contact-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.title {
+    font-family: "Playfair Display";
+    font-size: 40px;
+    padding: 20px;
+}
+
+.address {
+    font-size: 15px;
+    font-style: italic;
+    padding: 20px;
+}
+
+.mail {
+    font-size: 15px;
+    padding: 20px;
+}
+
+.phone-no {
+    font-size: 15px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 650px) {
+    .contact-us{
+        grid-template-columns: 1fr;
+    }
+}

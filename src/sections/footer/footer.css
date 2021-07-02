@@ -1,0 +1,30 @@
+.footer {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.company-name{
+    font-family: "Playfair Display";
+    font-size: 22px;
+    padding: 30px;
+}
+
+.copyright {
+    font-size: 14px;
+    padding: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon {
+    padding: 10px;
+}
